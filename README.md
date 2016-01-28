@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/start-babel.svg?style=flat-square)](https://www.npmjs.com/package/start-eslint)
+[![npm](https://img.shields.io/npm/v/start-babel.svg?style=flat-square)](https://www.npmjs.com/package/start-babel)
 [![travis](http://img.shields.io/travis/start-runner/babel.svg?style=flat-square)](https://travis-ci.org/start-runner/babel)
 [![deps](https://img.shields.io/gemnasium/start-runner/babel.svg?style=flat-square)](https://gemnasium.com/start-runner/babel)
 
