@@ -12,6 +12,8 @@ npm i -S start-babel
 
 ## Usage
 
+Task is rely on array of files and provides `[{ path, data }]` output.
+
 ```js
 // tasks/index.js
 import start from 'start';
@@ -22,7 +24,7 @@ import babel from 'start-babel';
 import write from 'start-write';
 
 export function build() {
-    return start(logger)(
+    return start(logger())(
         files('build/'),
         clean(),
         files('lib/**/*.js'),
