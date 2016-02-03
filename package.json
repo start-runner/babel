@@ -1,14 +1,11 @@
 {
   "name": "start-babel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babel task for Start",
   "keywords": [ "start", "start-task", "babel" ],
   "homepage": "https://github.com/start-runner/babel",
   "repository": "start-runner/babel",
-  "contributors": [
-    "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
-    "Denis Koltsov <iam@mistadikay.com> (https://github.com/mistadikay)"
-  ],
+  "author": "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
   "files": [ "build/" ],
   "main": "build/index.js",
   "peerDependencies": {
