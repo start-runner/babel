@@ -14,7 +14,8 @@
   "dependencies": {
     "globby": "4.x.x",
     "pify": "2.x.x",
-    "babel-core": "6.x.x"
+    "babel-core": "6.x.x",
+    "babel-runtime": "6.x.x"
   },
   "devDependencies": {
     "start": "3.2.x",
