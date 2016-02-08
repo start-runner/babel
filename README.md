@@ -18,6 +18,7 @@ npm i -S start-babel
 import start from 'start';
 import logger from 'start-simple-logger';
 import files from 'start-files';
+import watch from 'start-watch';
 import clean from 'start-clean';
 import babel from 'start-babel';
 import write from 'start-write';
@@ -29,6 +30,19 @@ export function build() {
         files('lib/**/*.js'),
         babel(),
         write('build/')
+    );
+}
+
+export function dev() {
+    return start(
+        files('build/'),
+        clean(),
+        files('lib/**/*.js'),
+        watch(file => start(
+            files(file),
+            babel(),
+            write('build/')
+        ))
     );
 }
 ```
