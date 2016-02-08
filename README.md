@@ -18,7 +18,7 @@ npm i -S start-babel
 
 ```js
 import start from 'start';
-import logger from 'start-simple-logger';
+import reporter from 'start-pretty-reporter';
 import files from 'start-files';
 import watch from 'start-watch';
 import clean from 'start-clean';
@@ -26,7 +26,7 @@ import babel from 'start-babel';
 import write from 'start-write';
 
 export function build() {
-    return start(logger())(
+    return start(reporter())(
         files('build/'),
         clean(),
         files('lib/**/*.js'),
