@@ -1,6 +1,6 @@
 {
   "name": "start-babel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Babel task for Start",
   "keywords": [ "start", "start-task", "babel" ],
   "homepage": "https://github.com/start-runner/babel",
