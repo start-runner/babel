@@ -32,7 +32,7 @@ export function build() {
         clean(),
         files('lib/**/*.js'),
         read(),
-        babel(),
+        babel({ sourceMaps: true }),
         write('build/')
     );
 }
