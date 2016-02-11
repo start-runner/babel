@@ -22,6 +22,7 @@ import reporter from 'start-pretty-reporter';
 import files from 'start-files';
 import watch from 'start-watch';
 import clean from 'start-clean';
+import read from 'start-read';
 import babel from 'start-babel';
 import write from 'start-write';
 
@@ -30,6 +31,7 @@ export function build() {
         files('build/'),
         clean(),
         files('lib/**/*.js'),
+        read(),
         babel(),
         write('build/')
     );
@@ -42,6 +44,7 @@ export function dev() {
         files('lib/**/*.js'),
         watch(file => start(
             files(file),
+            read(),
             babel(),
             write('build/')
         ))
@@ -49,7 +52,7 @@ export function dev() {
 }
 ```
 
-Task is rely on array of files and provides `[{ path, data }]` output, see [documentation](https://github.com/start-runner/start#readme) for details.
+Task is rely on `[{ path, data, map }]` input and provide the same, see [documentation](https://github.com/start-runner/start#readme) for details.
 
 ## Arguments
 
