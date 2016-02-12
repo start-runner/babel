@@ -17,7 +17,7 @@ npm i -S start-babel
 ## Usage
 
 ```js
-import start from 'start';
+import Start from 'start';
 import reporter from 'start-pretty-reporter';
 import files from 'start-files';
 import watch from 'start-watch';
@@ -26,8 +26,10 @@ import read from 'start-read';
 import babel from 'start-babel';
 import write from 'start-write';
 
+const start = Start(reporter());
+
 export function build() {
-    return start(reporter())(
+    return start(
         files('build/'),
         clean(),
         files('lib/**/*.js'),
