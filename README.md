@@ -54,7 +54,7 @@ export function dev() {
 }
 ```
 
-Task is rely on `[{ path, data, map }]` input and provide the same, see [documentation](https://github.com/start-runner/start#readme) for details.
+This task relies on `[{ path, data, map }]` input and provides the same, see [documentation](https://github.com/start-runner/start#readme) for details.
 
 ## Arguments
 
