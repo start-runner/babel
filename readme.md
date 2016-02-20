@@ -12,7 +12,7 @@
 ## Install
 
 ```
-npm i -S start-babel
+npm i -D start-babel
 ```
 
 ## Usage
