@@ -20,6 +20,7 @@ cache:
 branches:
   only:
     - master
+    - /^greenkeeper-.*$/
 
 skip_tags: true
 
