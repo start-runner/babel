@@ -1078,6 +1078,10 @@ fill-range@^2.1.0:
     repeat-element "^1.1.2"
     repeat-string "^1.5.2"
 
+find-parent-dir@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/find-parent-dir/-/find-parent-dir-0.3.0.tgz#33c44b429ab2b2f0646299c5f9f718f376ff8d54"
+
 find-up@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-1.1.2.tgz#6b2e9822b1a2ce0a60ab64d610eccad53cb24d0f"
@@ -1361,10 +1365,11 @@ http-signature@~1.1.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-husky@^0.11.6:
-  version "0.11.9"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-0.11.9.tgz#28cd1dc16bffdca1d4d93592814e5f3c327b38ee"
+husky@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-0.12.0.tgz#3a44922fce8071803242c3c7522a6582c50525dc"
   dependencies:
+    find-parent-dir "^0.3.0"
     is-ci "^1.0.9"
     normalize-path "^1.0.0"
 
@@ -2404,12 +2409,12 @@ stack-utils@0.x.x:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/stack-utils/-/stack-utils-0.4.0.tgz#940cb82fccfa84e8ff2f3fdf293fe78016beccd1"
 
-start-babel-cli@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/start-babel-cli/-/start-babel-cli-3.0.0.tgz#ce8875255d81b8a0b67b3e823e3fa1e3b8573b2f"
+start-babel-cli@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/start-babel-cli/-/start-babel-cli-4.0.1.tgz#205ffb1629fb519a748d9fffbf7db0acabd9d098"
   dependencies:
     babel-register "^6.11.6"
-    start-simple-cli "^3.0.0"
+    start-simple-cli "^4.0.0"
 
 start-babel@^2.1.1:
   version "2.1.1"
@@ -2480,9 +2485,9 @@ start-read@^0.2.0:
     graceful-fs "4.x.x"
     pify "2.x.x"
 
-start-simple-cli@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/start-simple-cli/-/start-simple-cli-3.0.0.tgz#5ab97ee6fd0b1251ffd9b79a755f6a93a048ec0f"
+start-simple-cli@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/start-simple-cli/-/start-simple-cli-4.1.0.tgz#3e43713363d109c6fcd4cc0a74aeebf2ddb5fd0d"
   dependencies:
     commander "^2.9.0"
     req-cwd "^1.0.1"
