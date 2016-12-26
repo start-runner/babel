@@ -10,8 +10,10 @@
 
 ## Install
 
-```
-npm i -D start-babel
+```sh
+npm install --save-dev start-babel
+# or
+yarn add --dev start-babel
 ```
 
 ## Usage
@@ -28,30 +30,26 @@ import write from 'start-write';
 
 const start = Start(reporter());
 
-export function build() {
-    return start(
-        files('build/'),
-        clean(),
-        files('lib/**/*.js'),
-        read(),
-        babel({ sourceMaps: true }),
-        write('build/')
-    );
-}
+export const build = () => start(
+  files('build/'),
+  clean(),
+  files('lib/**/*.js'),
+  read(),
+  babel({ sourceMaps: true }),
+  write('build/')
+);
 
-export function dev() {
-    return start(
-        files('build/'),
-        clean(),
-        files('lib/**/*.js'),
-        watch(file => start(
-            files(file),
-            read(),
-            babel(),
-            write('build/')
-        ))
-    );
-}
+export const dev = () => start(
+  files('build/'),
+  clean(),
+  files('lib/**/*.js'),
+  watch(file => start(
+    files(file),
+    read(),
+    babel(),
+    write('build/')
+  ))
+);
 ```
 
 This task relies on `[{ path, data, map }]` input and provides the same, see [documentation](https://github.com/start-runner/start#readme) for details.
